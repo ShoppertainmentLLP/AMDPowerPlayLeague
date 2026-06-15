@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="AMD Power Play League">
+  <!-- PLACEHOLDER LOGO — replace with final AMD Power Play League artwork -->
+  <defs>
+    <linearGradient id="ppl-red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ED1C24"/>
+      <stop offset="1" stop-color="#B3141A"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="26" fill="url(#ppl-red)"/>
+  <!-- subtle ball/seam ring -->
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2"/>
+  <!-- Power Play "play" mark -->
+  <path d="M50 41 L82 60 L50 79 Z" fill="#ffffff"/>
+  <!-- gold accent under the mark -->
+  <rect x="44" y="86" width="32" height="4" rx="2" fill="#FFBA01"/>
+</svg>
