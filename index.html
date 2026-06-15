@@ -4791,7 +4791,7 @@ footer { background:#111827; color:#9ca3af; border-top:1px solid rgba(255,255,25
   <a href="#ai-assistant" onclick="closeMenu()">AI Assistant</a>
   <a href="#rewards" onclick="closeMenu()">Rewards</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
-  <a href="#" onclick="closeMenu();showLoginModal();" style="color:var(--blue);font-weight:700">Sign in with APN &rarr;</a>
+  <a href="#" onclick="event.preventDefault();closeMenu();" style="color:var(--blue);font-weight:700">Sign in with APN &rarr;</a>
 </nav>
 
 <!-- HERO -->
@@ -8834,8 +8834,9 @@ function addMsg(text, isUser){
 
 /* ── Login / Auth ── */
 function showLoginModal() {
-  document.getElementById('loginOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
+  /* Sign-in delinked — login flow intentionally disabled for this build.
+     Kept as a no-op so existing onclick handlers don't error. */
+  return;
 }
 function hideLoginModal() {
   document.getElementById('loginOverlay').classList.remove('open');
